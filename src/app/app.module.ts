@@ -27,7 +27,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ContactComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     AccordionModule.forRoot(),
